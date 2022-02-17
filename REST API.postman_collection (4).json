@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "ae0e4e0f-e6d5-43b9-899b-f6cffac6a98a",
+		"name": "REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLessons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/collection/Lesson Information",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"collection",
+						"Lesson Information"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateRecord",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Spaces\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/collection/Lesson Information/6209503b8c7fea16da2c259a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"collection",
+						"Lesson Information",
+						"6209503b8c7fea16da2c259a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Chimbee Mene\",\r\n    \"LessonID\": 1005,\r\n    \"Numberofspace\": 2,\r\n    \"Phonenumber\": 30109084\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/collection/Order Information",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"collection",
+						"Order Information"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

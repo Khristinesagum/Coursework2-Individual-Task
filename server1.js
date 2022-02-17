@@ -69,13 +69,6 @@ app.get('/collection/Lesson Information', (req, res, next) => {
         res.send(lessonsinfo)
     })
 })
-app.post('/post-order', function (req, res) {
-    db.then(function(dbs) {
-        delete req.body._id; // for safety reasons
-        dbs.collection('Order Information').insertOne(req.body);
-    });    
-    res.send('Data received:\n' + JSON.stringify(req.body));
-});
 
 const port = process.env.PORT || 3000
 app.listen(port)
