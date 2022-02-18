@@ -1,9 +1,7 @@
 // Import dependencies modules:
 const express = require('express');
 const bodyParser = require('body-parser');
-const path = require('path');
-const req = require('express/lib/request');
-const res = require('express/lib/response');
+
 // Create an Express.js instance:
 const app = express()
 
@@ -69,6 +67,7 @@ app.get('/collection/Lesson Information', (req, res, next) => {
         res.send(lessonsinfo)
     })
 })
+
 
 const port = process.env.PORT || 3000
 app.listen(port)
